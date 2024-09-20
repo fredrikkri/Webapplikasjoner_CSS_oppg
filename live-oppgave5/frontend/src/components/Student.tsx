@@ -1,12 +1,10 @@
 import Avatar from "./Avatar";
+import type { Student as StudentProps } from "./types";
 
-type StudentProps = {
-    id: string;
-    name: string;
-  };
+
 
 export default function Student(props: StudentProps) {
-    const {name} = props
+    const {id, name} = props
     return (
         <section>
             <Avatar name={name} />

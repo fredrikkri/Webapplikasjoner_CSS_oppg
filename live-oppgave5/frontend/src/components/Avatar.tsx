@@ -4,7 +4,8 @@ type AvatarProps = {
 
 export default function Avatar(props: AvatarProps) {
     const {name} = props
+    const firstletter = name.split(" ").join("").toUpperCase().slice(0, 1)
     return (
-        <p>{name.slice(0,1).toUpperCase()}</p>
+        <p className="avatar">{firstletter}</p>
     )
 }
